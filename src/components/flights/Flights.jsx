@@ -1,6 +1,6 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import useAxios from "../../hooks/useAxios";
+import FlightFilter from "../flight-filter/FlightFilter";
 import Flight from "../flight/Flight";
 
 export default function Flights(props) {
@@ -26,6 +26,7 @@ export default function Flights(props) {
     return (
         <section>
             <h1>Flights</h1>
+            <FlightFilter />
             {flights.map(e => {
                 return <Flight flight={e} key={e.id} onBookFlight={onBookFlight} />
             })}
