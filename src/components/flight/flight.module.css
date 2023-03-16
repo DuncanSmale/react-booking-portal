@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+}
+
+.card {
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.space {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: rgb(151, 59, 236);
+}
+
+.button:active {
+    background-color: rgb(107, 39, 170);
+}
